@@ -1,20 +1,31 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import React from 'react';
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import About from './Components/About';
+import NewsPaper from './Components/NewsPaper';
+import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <section id="home" className="container my-5">
-        <h1>Welcome to News India</h1>
-        <p>Your trusted source for the latest news.</p>
-      </section>
-      
-      <Footer />
-    </div>
+    <Router>
+      <div className="d-flex flex-column min-vh-100">
+        <Navbar />
+        <main className="flex-grow-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/newspaper" element={<NewsPaper />} />
+            <Route path="/contact" element={<Contact />} />
+            
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

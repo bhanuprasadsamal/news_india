@@ -1,12 +1,25 @@
-import React from "react";
+import React from 'react';
+import './Footer.css';  // Make sure to import the CSS file
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white text-center py-3 mt-4">
-      <div className="container">
-        <p className="mb-0">&copy; {new Date().getFullYear()} News India. All Rights Reserved.</p>
+    <div className="footer">
+      <p>&copy; 2024 ALL NEWS. All rights reserved. Created by Bhanu</p>
+      <div className="social-icons">
+        <a href="https://github.com/bhanuprasadsamal" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://github.com/bhanuprasadsamal" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/bhanuprasadsamal" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-instagram"></i>
+        </a>
+        <a href="https://github.com/bhanuprasadsamal" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-linkedin-in"></i>
+        </a>
       </div>
-    </footer>
+    </div>
   );
 };
 

@@ -1,0 +1,75 @@
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px; /* Ensures space between content and footer */
+  }
+  
+  /* Footer Links */
+  .footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer a:hover {
+    color: #007bff;
+  }
+  
+  /* Social Icons */
+  .footer .social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Social Icons Styling */
+  .footer .social-icons i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .footer .social-icons i:hover {
+    color: #007bff;
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* Mobile Devices */
+  @media (max-width: 576px) {
+    .footer {
+      padding: 15px;
+    }
+    
+    .footer .social-icons {
+      flex-direction: column; /* Stack icons vertically */
+    }
+  
+    .footer .social-icons i {
+      font-size: 24px;
+      margin: 5px 0; /* Space between icons */
+    }
+  }
+  
+  /* Tablet Devices */
+  @media (max-width: 768px) {
+    .footer .social-icons {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  
+  /* Large Screens */
+  @media (min-width: 1024px) {
+    .footer {
+      padding: 20px;
+    }
+    
+    .footer .social-icons i {
+      font-size: 24px; /* Larger icons for desktop */
+    }
+  }
+  

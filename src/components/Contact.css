@@ -1,0 +1,21 @@
+.contact-container {
+    margin-top: 50px;
+    
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form .btn {
+    margin-top: 20px;
+    width: 100%;
+  }
+.contact-container h3 {
+    text-align: center;
+}
