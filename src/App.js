@@ -8,6 +8,7 @@ import About from './Components/About';
 import NewsPaper from './Components/NewsPaper';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import AdminPanel from './Components/AdminPanel';
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/newspaper" element={<NewsPaper />} />
             <Route path="/contact" element={<Contact />} />
-            
+            <Route path="/admin" element={<AdminPanel />} />
           </Routes>
         </main>
         <Footer />

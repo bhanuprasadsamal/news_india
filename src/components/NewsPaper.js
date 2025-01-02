@@ -64,7 +64,7 @@ const NewsPaper = () => {
 
       <div className="text-center mt-4">
         {/* Link to Admin Panel */}
-        <Link to="#" className="btn btn-secondary">
+        <Link to="/admin" className="btn btn-secondary">
           Go to Admin Panel
         </Link>
       </div>
